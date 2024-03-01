@@ -12,10 +12,15 @@ body {
 
     display: grid;
     grid-template-columns: minmax(270px, 1fr) 4fr;
+    /* height: 100vh; */
 }
 
 ul {
     list-style-type: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 .container {
@@ -46,6 +51,10 @@ li {
 h1 {
     margin: 1rem auto;
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 img {
@@ -144,6 +153,11 @@ nav {
 .projects {
     grid-column: span 2;
     grid-row: span 4;
+    /* height: 100%; */
+}
+
+.projects > .container {
+    height: 94%;
 }
 
 .announcements {
@@ -152,4 +166,44 @@ nav {
 
 .trending {
     grid-row: span 2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    background-color: var(--midnight-green);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.project-title {
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    color: #bababa;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.project-buttons {
+    margin-top: auto;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+.project-buttons > button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    color: var(--white);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 1rem;
 }

@@ -15,21 +15,21 @@
 <body>
     <section class="sidebar">
         <div class="container">
-            <h1>Dashboard</h1>
+            <h1 class="cursor-pointer">Dashboard</h1>
 
-            <ul>
-                <li><i class="fa-solid fa-house"></i> Home</li>
-                <li><i class="fa-solid fa-user"></i> Profile</li>
-                <li><i class="fa-solid fa-inbox"></i> Messages</li>
-                <li><i class="fa-solid fa-clock-rotate-left"></i> History</li>
-                <li><i class="fa-solid fa-list-check"></i> Tasks</li>
-                <li><i class="fa-solid fa-users"></i> <span>Communities</span></li>
+            <ul >
+                <li class="cursor-pointer"><i class="fa-solid fa-house"></i> Home</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-user"></i> Profile</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-inbox"></i> Messages</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-clock-rotate-left"></i> History</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-list-check"></i> Tasks</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-users"></i> <span>Communities</span></li>
             </ul>
 
             <ul>
-                <li><i class="fa-solid fa-gear"></i> Settings</li>
-                <li><i class="fa-solid fa-question"></i> Support</li>
-                <li><i class="fa-solid fa-shield-halved"></i> Privacy</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-gear"></i> Settings</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-question"></i> Support</li>
+                <li class="cursor-pointer"><i class="fa-solid fa-shield-halved"></i> Privacy</li>
             </ul>
         </div>
     </section>
@@ -42,25 +42,25 @@
                         <input type="text" name="search" id="search-bar">
                     </div>
                     <div class="account">
-                        <i class="fa-solid fa-bell"></i>
-                        <img src="assets/img/profile/Wii Character GuestC.webp" alt="profile picture">
-                        <span>Harrison Hui</span>
+                        <i class="fa-solid fa-bell cursor-pointer"></i>
+                        <img class="cursor-pointer" src="assets/img/profile/Wii Character GuestC.webp" alt="profile picture">
+                        <span class="cursor-pointer">Harrison Hui</span>
                     </div>
                 </div>
 
                 <div class="nav-row">
                     <div class="user">
-                        <img src="assets/img/profile/Wii Character GuestC.webp" alt="profile picture">
+                        <img class="cursor-pointer" src="assets/img/profile/Wii Character GuestC.webp" alt="profile picture">
                         <div class="user-info">
                             <div>Hi there,</div>
-                            <div>Harrison Hui (@harrison)</div>
+                            <div class="cursor-pointer">Harrison Hui (@harrison)</div>
                         </div>
                     </div>
                     
                     <div class="buttons">
-                        <button type="button">New</button>
-                        <button type="button">Upload</button>
-                        <button type="button">Share</button>
+                        <button class="cursor-pointer" type="button">New</button>
+                        <button class="cursor-pointer" type="button">Upload</button>
+                        <button class="cursor-pointer" type="button">Share</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,37 @@
             <div class="container">
                 <h2>Your Projects</h2>
                 <div class="cards-container">
-                    
+
+                    <div class="card">
+                        <div class="project-title cursor-pointer">Project A</div>
+                        <div class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nesciunt repudiandae reiciendis quibusdam excepturi dolore optio?</div>
+                        <div class="project-buttons">
+                            <button type="button" class="cursor-pointer"><i class="fa-regular fa-heart"></i></button>
+                            <button type="button" class="cursor-pointer"><i class="fa-regular fa-bookmark"></i></button>
+                            <button type="button" class="cursor-pointer"><i class="fa-solid fa-retweet"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="project-title cursor-pointer">Project B</div>
+                        <div class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nesciunt repudiandae reiciendis quibusdam excepturi dolore optio, error aliquid inventore laudantium in officiis aperiam nisi! Mollitia expedita dolorum doloribus magni quae?</div>
+                        <div class="project-buttons">
+                            <button type="button" class="cursor-pointer"><i class="fa-regular fa-heart"></i></button>
+                            <button type="button" class="cursor-pointer"><i class="fa-regular fa-bookmark"></i></button>
+                            <button type="button" class="cursor-pointer"><i class="fa-solid fa-retweet"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="project-title cursor-pointer">Project C</div>
+                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae maiores eaque, fugiat incidunt unde dolorem possimus nihil libero deleniti accusamus rerum cumque. Tenetur consectetur eveniet velit esse sequi laboriosam optio sit ipsam. Fuga quia maiores ipsum, voluptate explicabo temporibus iste? Rem possimus architecto ex. Quidem pariatur iure accusamus ipsam.</div>
+                        <div class="project-buttons">
+                            <button type="button" class="cursor-pointer"><i class="fa-regular fa-heart"></i></button>
+                            <button type="button" class="cursor-pointer"><i class="fa-regular fa-bookmark"></i></button>
+                            <button type="button" class="cursor-pointer"><i class="fa-solid fa-retweet"></i></button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
