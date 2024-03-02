@@ -153,7 +153,6 @@ nav {
 .projects {
     grid-column: span 2;
     grid-row: span 4;
-    /* height: 100%; */
 }
 
 .projects > .container {
@@ -164,8 +163,16 @@ nav {
     grid-row: span 2;
 }
 
+.announcements > .container {
+    height: 85%;
+}
+
 .trending {
     grid-row: span 2;
+}
+
+.trending > .container {
+    height: 88%;
 }
 
 .card {
@@ -177,7 +184,8 @@ nav {
     padding: 2rem;
 }
 
-.project-title {
+.project-title,
+.announcement-title {
     margin-bottom: 0.5rem;
 }
 
@@ -206,4 +214,21 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
     gap: 1rem;
+}
+
+.announcement-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.announcement {
+    background-color: var(--midnight-green);
+    border-radius: 12px;
+    padding: 0.5rem;
+}
+
+.announcement-description {
+    color: #bababa;
+    font-size: 1rem;
 }
