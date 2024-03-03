@@ -222,13 +222,31 @@ nav {
     gap: 1rem;
 }
 
-.announcement {
+.announcement,
+.trends {
     background-color: var(--midnight-green);
     border-radius: 12px;
     padding: 0.5rem;
 }
 
-.announcement-description {
+.announcement-description,
+.trends-description {
     color: #bababa;
     font-size: 1rem;
+}
+
+.trending-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.trends {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.trends img {
+    height: 4vh;
 }
